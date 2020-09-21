@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link  type="text/css" href="worldmap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>TopoJSON</title>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">CORONA VISUALISER</a>
+		  </div>
+	  
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="/worldmap">World During Corona<span class="sr-only">(current)</span></a></li>
+			  <li><a href="/linegraph">Countrywise Stats</a></li>
+			  <li><a href="/bubblechart">World Analysis</a></li>
+			  <li><a href="/scatterplot">Monthly Journey</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			  <li><a href="#">Link</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+    </nav>
+    
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <p>Corona has mostly affected USA, India and Brazil....</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <p>Corona has mostly affected USA, India and Brazil....</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <p>Corona has mostly affected USA, India and Brazil....</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  <svg></svg>
+  <select class="myinput">
+  	<option value="total_cases">Total Cases</option>
+  	<option value="total_tests">Total Tests</option>
+  	<option value="population">Population</option>
+  </select>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"></script>
+  <script src="CoronaData.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+

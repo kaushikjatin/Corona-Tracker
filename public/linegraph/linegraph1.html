@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Linegraph</title>
+	<link type="text/css" href="linegraph.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">CORONA VISUALISER</a>
+		  </div>
+	  
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			  <li><a href="/worldmap">World During Corona</a></li>
+			  <li class="active"><a href="/linegraph">Countrywise Stats<span class="sr-only">(current)</span></a></li>
+			  <li><a href="/bubblechart">World Analysis</a></li>
+			  <li><a href="/scatterplot">Monthly Journey</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			  <li><a href="#">Link</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	  </nav>
+
+
+
+	  <div class="container">
+		<div class="row">
+		  <div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+			  <div class="caption">
+				<p>Corona has mostly affected USA, India and Brazil....</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+			  <div class="caption">
+				<p>Corona has mostly affected USA, India and Brazil....</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+			  <div class="caption">
+				<p>Corona has mostly affected USA, India and Brazil....</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+	<svg>
+	</svg>
+   <select class="myinput">
+	   <option value="Afghanistan">Afghanistan</option>
+	   <option value="Argentina">Argentina</option>
+	   <option value="Armenia">Armenia</option>
+	   <option value="Australia">Australia</option>
+	   <option value="Austria">Austria</option>
+	   <option value="Bangladesh">Bangladesh</option>
+	   <option value="Belarus">Belarus</option>
+	   <option value="Belgium">Belgium</option>
+	   <option value="Bhutan">Bhutan</option>
+	   <option value="Brazil">Brazil</option>
+	   <option value="Bulgaria">Bulgaria</option>
+	   <option value="Cambodia">Cambodia</option>
+	   <option value="Canada">Canada</option>
+	   <option value="Central African Republic">Central African Republic</option>
+	   <option value="Chile">Chile</option>
+	   <option value="China">China</option>
+	   <option value="Colombia">Colombia</option>
+	   <option value="Cuba">Cuba</option>
+	   <option value="Cyprus">Cyprus</option>
+	   <option value="Denmark">Denmark</option>
+	   <option value="Egypt">Egypt</option>
+	   <option value="France">France</option>
+	   <option value="Germany">Germany</option>
+	   <option value="Ghana">Ghana</option>
+	   <option value="United Kingdom">Great Britain</option>
+	   <option value="Greece">Greece</option>
+	   <option value="Greenland">Greenland</option>
+	   <option value="Hong Kong">Hong Kong</option>
+	   <option value="Hungary">Hungary</option>
+	   <option value="Iceland">Iceland</option>
+	   <option value="Indonesia">Indonesia</option>
+	   <option value="India">India</option>
+	   <option value="Iran">Iran</option>
+	   <option value="Iraq">Iraq</option>
+	   <option value="Ireland">Ireland</option>
+	   <option value="Israel">Israel</option>
+	   <option value="Italy">Italy</option>
+	   <option value="Japan">Japan</option>
+	   <option value="Jordan">Jordan</option>
+	   <option value="Kazakhstan">Kazakhstan</option>
+	   <option value="Kenya">Kenya</option>
+	   <option value="Korea South">Korea South</option>
+	   <option value="Kuwait">Kuwait</option>
+	   <option value="Mexico">Mexico</option>
+	   <option value="Nepal">Nepal</option>
+	   <option value="New Zealand">New Zealand</option>
+	   <option value="Pakistan">Pakistan</option>
+	   <option value="Phillipines">Philippines</option>
+	   <option value="Poland">Poland</option>
+	   <option value="Russia">Russia</option>
+	   <option value="Saudi Arabia">Saudi Arabia</option>
+	   <option value="Singapore">Singapore</option>
+	   <option value="South Africa">South Africa</option>
+	   <option value="Spain">Spain</option>
+	   <option value="Sri Lanka">Sri Lanka</option>
+	   <option value="Sweden">Sweden</option>
+	   <option value="Switzerland">Switzerland</option>
+	   <option value="Thailand">Thailand</option>
+	   <option value="Turkey">Turkey</option>
+	   <option value="Uganda">Uganda</option>
+	   <option value="United Kingdom">United Kingdom</option>
+	   <option value="United Arab Erimates">United Arab Emirates</option>
+	   <option value="US">United States of America</option>
+	   <option value="Venezuela">Venezuela</option>
+	   <option value="Vietnam">Vietnam</option>
+	   <option value="Zimbabwe">Zimbabwe</option>
+   </select>
+
+	<script type="text/javascript" src="./countrywise_deaths.js"></script>
+	<script type="text/javascript" src="./countrywise_confirmed.js"></script>
+	<script type="text/javascript" src="./countrywise_recovered.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.js" integrity="sha512-oIljcvt50cVlieYwm4lbOWDhfre+VNJumxvSHtOOo+T+slMc4t/OcSvnGEhznwepfeM0IF0itp9dF0OOK1f77Q==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./linegraph.js"></script>
+</body>
+</html>
