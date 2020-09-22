@@ -1,7 +1,7 @@
 window.onload = function()
 {
-	var height=600;
-	var width=600;
+	var height=500;
+	var width=500;
 	var padding=70;
 
 

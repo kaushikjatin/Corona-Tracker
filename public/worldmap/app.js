@@ -1,10 +1,10 @@
-var width = 900;
-var height =600;
+var width = 700;
+var height =500;
 
 
 
 var projection=d3.geoMercator()
-					.scale(130)
+					.scale(110)
 					.translate([width/2,height/1.5])
 
 
