@@ -43,6 +43,15 @@ var scaley=d3.scaleLinear()
 drawbubblegraph(cases,"cases","TotalCases","Red");
 drawbubblegraph(deaths,"deaths","TotalDeaths","#ccc");
 drawbubblegraph(recovered,"recovered","TotalCases","Green");
+var svg = d3.select("svg")
+
+// Handmade legend
+svg.append("circle").attr("cx",100).attr("cy",90).attr("r", 6).style("fill", "red")
+svg.append("circle").attr("cx",100).attr("cy",110).attr("r", 6).style("fill", "green")
+svg.append("circle").attr("cx",100).attr("cy",130).attr("r", 6).style("fill", "#ccc")
+svg.append("text").attr("x", 120).attr("y", 90).text("Confirmed").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 120).attr("y", 110).text("Recovered").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 120).attr("y", 130).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
 
 
 var xaxis=d3.axisBottom(scalex)

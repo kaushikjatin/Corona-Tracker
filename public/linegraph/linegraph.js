@@ -11,6 +11,17 @@ window.onload = function()
 
 
 	makelinegraph("Afghanistan");
+	var svg = d3.select("svg")
+
+// Handmade legend
+	svg.append("circle").attr("cx",100).attr("cy",50).attr("r", 6).style("fill", "red")
+	svg.append("circle").attr("cx",100).attr("cy",70).attr("r", 6).style("fill", "green")
+	svg.append("circle").attr("cx",100).attr("cy",90).attr("r", 6).style("fill", "#000")
+	svg.append("text").attr("x", 120).attr("y", 50).text("Confirmed").style("font-size", "15px").attr("alignment-baseline","middle")
+	svg.append("text").attr("x", 120).attr("y", 70).text("Recovered").style("font-size", "15px").attr("alignment-baseline","middle")
+	svg.append("text").attr("x", 120).attr("y", 90).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
+
+	
 
 	var select=d3.select("select");
 	select.on("change",d => makelinegraph(d.target.value));
@@ -79,11 +90,13 @@ window.onload = function()
 		d3.select("svg")
 		.append("g")
 		.attr("transform","translate(0,"+(height-padding)+")")
+		.attr("stroke-width","5")
 		.call(xaxis);
 
 		d3.select("svg")
 		.append("g")
 		.attr("transform","translate("+padding+",0)")
+		.attr("stroke-width","5")
 		.call(yaxis);
 
 
