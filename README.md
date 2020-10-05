@@ -19,7 +19,15 @@ Add additional notes about how to deploy this on a live system
 
 * [D3.js](https://d3js.org) - JavaScript library for producing dynamic, interactive data visualizations in web browsers
 * [Express](https://expressjs.com/en/starter/installing.html) - Javascript framework.
+* [Pandas](https://pandas.pydata.org/docs/) - Python Library.
+* [Numpy](https://numpy.org/doc/) - Python Library.
 
+
+## Work-Flow
+
+* Had to do a crash course on d3.js and also go through it's documentation.
+* Nedded to clean my data , so had to learn the pandas library of python
+* Used pandas and numpy for cleaning my data.
 
 ## Authors
 
