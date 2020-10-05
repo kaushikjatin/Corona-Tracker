@@ -4,9 +4,7 @@ These are series of graphs which can be used to find about useful instincts abou
 
 ## Live At-
 
-```
   * [Corona Visualizer](https://corona-visualiser.herokuapp.com/)
-```
 
 ### Prerequisites
 
