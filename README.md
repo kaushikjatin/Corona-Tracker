@@ -21,6 +21,9 @@ No pre-requisites just go to the link and you will be able to see the graphs.
 
 ## Work-Flow
 
+* Requirement Analysis - (What type of plots will be best to get some useful instincts)
+* DataGathering - Went theought the web to get data of corona patients on daily basis
+* Data Cleaning - Data I got was very unordered so needed to order it in the way I needed and also contained many Nan Values
 * Had to do a crash course on d3.js and also go through it's documentation.
 * Nedded to clean my data , so had to learn the pandas library of python
 * Used pandas and numpy for cleaning my data.
